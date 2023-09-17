@@ -9,5 +9,8 @@ public class MyfirstprojectApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MyfirstprojectApplication.class, args);
 	}
+	public void m1()
+	{
+	}
 
 }
