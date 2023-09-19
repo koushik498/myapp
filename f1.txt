@@ -1,1 +1,61 @@
 <h1>This is f1 file</h1>
+=========================
+package com.examples.koushik;
+
+interface hello1234
+{
+	//abstract  methods --> declare in one class and write def in its child class
+	//abstract keyword is not mandatory by default the method is abstact method
+	
+	public abstract void m1();
+	
+	public void m2();
+}
+class hi implements hello1234
+{
+
+	@Override
+	public void m1() {
+		System.out.println("this is m1");
+	}
+
+	@Override
+	public void m2() {
+		System.out.println("this is m2");
+	}
+	
+}
+class hi2 implements hello1234
+{
+
+	@Override
+	public void m1() {
+		System.out.println("this is m3");
+	}
+
+	@Override
+	public void m2() {
+		System.out.println("this is m4");
+	}
+	
+}
+
+public class interfaceExample {
+
+	public static void main(String[] args) {
+		
+		//hi obj =  new hi();
+		//hello1234 obj = new hello1234();
+		
+		hello1234 obj = new hi();
+		
+		hello1234 obj1 = new hi2();
+		
+		obj.m1();
+		obj.m2();
+		obj1.m1();
+		obj1.m2();
+
+	}
+
+}
